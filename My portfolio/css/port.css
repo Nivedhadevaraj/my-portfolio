@@ -1,0 +1,216 @@
+body{
+    background-color: rgb(17, 17, 17);
+}
+/*welcome page*/
+#home{
+    background:linear-gradient(to right ,rgb(218, 216, 216) ,rgb(161, 160, 160) ,black);
+    color:black;
+}
+.header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    background-color:black;
+    color:white;
+}
+nav{
+    margin:20px;
+}
+nav a{
+text-decoration: none;
+margin:20px;
+color:white;
+}
+nav a:hover{
+    color: rgb(64, 184, 231);
+    border-bottom: 1px solid blue;
+}
+.main{
+    display:flex;
+    justify-content:space-between;
+}
+.text{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-top:150px;
+margin-left:250px;
+}
+.text h1{
+    font-size: 2rem;
+    color:black;
+}
+.text p{
+    color:rgb(65, 63, 63);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text button{
+    margin:50px;
+    background-color: rgb(58, 56, 56);
+    color:white;
+    width:150px;
+    height:30px;
+}
+.photo img{
+    width:400px;
+    height:400px;
+    border-radius:40%;
+    margin:100px;
+    margin-right:250px;
+    animation: slide-down 0.50s ease;
+}
+@keyframes slide-down {
+ from { transform: translateY(-100px); opacity: 0; }
+ to { transform: translateY(0); opacity: 1; }
+}
+@media(max-width:800px){
+   #home{
+    font-size: 10px;
+    margin:0;
+    padding:0;
+}
+}
+
+/*Education*/
+
+.edu{
+    margin:100px;
+    margin-top:100px;
+    font-size: 20px;
+}
+#education h1{
+    font-size: 3rem;
+    font-style: italic;
+    color:rgb(13, 25, 202);
+    text-align: center;
+    margin:30px;
+    padding-top:150px;
+}
+#education{
+    border:3px solid grey;
+    justify-content: center;
+    background: radial-gradient(ellipse, rgb(223, 220, 220),rgb(126, 124, 124),grey);
+}
+#education span{
+    color:rgb(94, 64, 150);
+}
+#education h1:hover{
+    color:bisque;
+}
+#education span:hover{
+    color:rgb(221, 30, 157);
+}
+
+/*about me*/
+.about{
+   display:flex;
+justify-content: space-between;
+}
+.about img{
+   margin:100px;
+   border-radius:30px;
+   opacity:0.15;
+   transition:0.3s ease;
+}
+#aboutus{
+  background-color:rgb(180, 176, 176);  
+  border:2px solid grey;
+}
+.text p{
+    font-size:30px;  
+}
+#aboutus h1{
+    text-align:center;
+    margin-top:50px;
+    border:1px solid black;
+    width:500px;
+    margin-left:400px;
+    background-color:grey;
+    border-radius:20px;
+    margin-top:80px;
+}
+.about img:hover{
+    opacity:1;
+    transform:scale(1.1);
+}
+
+/*skills and experience*/
+#skillsandexperience{
+    background-color: rgb(194, 191, 191);
+}
+#skillsandexperience h1{
+    text-align: center;
+    padding-top:80px;
+}
+.skills{
+    display:flex;
+    justify-content: space-between;
+    margin-left:200px;
+    margin-right:200px;
+   background-color:grey;
+    font-size: 20px;
+    margin-top:50px;
+    border-radius:30px;
+    padding:50px;
+}
+.experience{
+   margin-left:200px;
+    margin-right:200px;
+    background-color:grey;
+    font-size: 20px;
+    margin-top:50px;
+    border-radius:30px; 
+    padding:50px;
+    padding-bottom:50px;
+}
+.skills img{
+    filter: grayscale(100%) brightness(80%);
+ transition: filter 0.3s ease;
+}
+.skills img:hover{
+    filter:none;
+}
+.experience p:hover{
+    color:blueviolet;
+}
+/*contact*/
+#contact{
+    background-color:rgb(161, 159, 159);
+    padding:30px;
+}
+#contact h1{
+    padding-top:50px;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgb(137, 225, 228);
+    animation: fillProgress 5s ease-in-out forwards;
+}
+ @keyframes fillProgress {
+ to {
+ width: 100%;
+ }}
+.details{
+    border:1px solid black;
+    width:400px;
+    border-radius:10%;
+    height:100%;
+    font-size: 20px;
+    margin:100px;
+    padding-left:30px;
+    background-color: white;
+}
+/*Profile*/
+#profile{
+    margin:100px;
+}
+#profile table{
+    margin:50px;
+    font-size: 30px;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
